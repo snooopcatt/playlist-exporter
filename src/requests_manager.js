@@ -25,7 +25,6 @@ let Manager = function (timeout, limit) {
                 iterator();
             }
             else {
-                console.log('API limit exceeded, waiting for reset');
                 me.immediateTimer = setTimeout(iterator, 10);
             }
         }
@@ -34,9 +33,8 @@ let Manager = function (timeout, limit) {
     iterator.bind(this)();
 
     this.intervalTimer = setInterval(() => { 
-        console.log('API limit reset');
-        this.counter = 0; 
-    }, this.timeout);
+        me.counter = 0; 
+    }, me.timeout);
 
     this.schedule = function schedule(fn) {
         return new Promise((resolve, reject) => {

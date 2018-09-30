@@ -18,22 +18,40 @@ async function doImport(code) {
                 const api = new deezerApi(result.accessToken, deezer);
                 const playlistsToImport = JSON.parse(fs.readFileSync(path.join('output', 'playlists.json'), { encoding: 'UTF8' }));
     
-                let targetPL = playlistsToImport[2];
-    
-                if (targetPL) {
-                    const tracksToAdd = Promise.all(targetPL.tracks.map(track => api.findTrack(track.title, track.artist)));
-    
-                    api.createPlaylist(targetPL.title)
-                        .then(result => {
-                            return tracksToAdd.then(tracks => {
-                                return api.addToPlaylist(tracks.map(track => track.data[0].id), result.id);
+                const requests = [];
+
+                for (let targetPL of playlistsToImport) {
+                    if (targetPL) {
+                        const tracksToAdd = Promise.all(targetPL.tracks.map(track => api.findTrack(track.title, track.artist)));
+        
+                        const request = api.createPlaylist(targetPL.title)
+                            .then(result => {
+                                return tracksToAdd.then(tracks => {
+                                    if (result) {
+                                        return api.addToPlaylist(tracks.map(track => {
+                                            if (track.data[0]) {
+                                                return track.data[0].id;
+                                            }
+                                            else {
+                                                console.log(`Couldnt add track: ${track}`);
+                                            }
+                                        }), result.id);
+                                    }
+                                    else {
+                                        console.log(`Cannot create playlist ${targetPL.title}`);
+                                        return Promise.resolve();
+                                    }
+                                });
                             });
-                        })
-                        .then(() => {
-                            api.destroy();
-                        })
-                        .then(resolve);
+
+                        requests.push(request);
+                    }
                 }
+
+                Promise.all(requests).then(() => {
+                    api.destroy();
+                    return resolve();
+                });
             }
         });
     });
