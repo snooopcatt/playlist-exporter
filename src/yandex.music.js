@@ -38,7 +38,7 @@ async function exportPlaylists() {
         output.push(playlistObject);
     }
 
-    fs.writeFileSync(path.join('output', 'yandex.json'), JSON.stringify(output), { encoding: 'UTF8' });
+    fs.writeFileSync(path.join('output', 'playlists.json'), JSON.stringify(output), { encoding: 'UTF8' });
 
     console.log(`Exported ${songsCount} songs from ${playlistsCount} playlists`);
 }
