@@ -1,0 +1,27 @@
+{
+  "name": "playlist-exporter",
+  "version": "1.0.0",
+  "description": "This is a humble attempt to export playlist from yandex.music to deezer. If any interest is shown, functionality may be extended",
+  "main": "main.js",
+  "dependencies": {
+    "node-deezer": "^0.3.3",
+    "yandex-music-api": "^0.0.3"
+  },
+  "devDependencies": {
+    "commander": "^2.18.0",
+    "open": "0.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snooopcatt/playlist-exporter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snooopcatt/playlist-exporter/issues"
+  },
+  "homepage": "https://github.com/snooopcatt/playlist-exporter#readme"
+}

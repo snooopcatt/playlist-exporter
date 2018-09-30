@@ -1,0 +1,266 @@
+{
+    "owner": {
+        "uid": 47993101,
+        "login": "ragzovskii",
+        "name": "ragzovskii",
+        "sex": "male",
+        "verified": false
+    },
+    "uid": 47993101,
+    "kind": 1019,
+    "title": "calm",
+    "revision": 2,
+    "snapshot": 1,
+    "trackCount": 1,
+    "visibility": "public",
+    "collective": false,
+    "created": "2018-08-09T09:29:49+00:00",
+    "modified": "2018-08-09T09:29:50+00:00",
+    "available": true,
+    "isBanner": false,
+    "isPremiere": false,
+    "durationMs": 244850,
+    "cover": {
+        "type": "mosaic",
+        "itemsUri": [
+            "avatars.yandex.net/get-music-content/28589/2f3e2050.a.3888859-1/%%"
+        ],
+        "custom": false
+    },
+    "ogImage": "avatars.yandex.net/get-music-content/28589/2f3e2050.a.3888859-1/%%",
+    "tracks": [
+        {
+            "id": 31981261,
+            "track": {
+                "id": "31981261",
+                "realId": "31981261",
+                "title": "Spirit of the Wild",
+                "major": {
+                    "id": 108,
+                    "name": "CDBABY"
+                },
+                "available": true,
+                "availableForPremiumUsers": true,
+                "durationMs": 244850,
+                "storageDir": "120293_feb17fa8.47580857.1.31981261",
+                "fileSize": 5876923,
+                "normalization": {
+                    "gain": -6.89,
+                    "peak": 32766
+                },
+                "artists": [
+                    {
+                        "id": 1805508,
+                        "name": "BrunuhVille",
+                        "various": false,
+                        "composer": false,
+                        "cover": {
+                            "type": "from-album-cover",
+                            "prefix": "2f3e2050.a.3888859-1",
+                            "uri": "avatars.yandex.net/get-music-content/28589/2f3e2050.a.3888859-1/%%"
+                        },
+                        "genres": []
+                    }
+                ],
+                "albums": [
+                    {
+                        "id": 3888859,
+                        "title": "Age of Wonders",
+                        "year": 2016,
+                        "releaseDate": "2016-09-07T00:00:00+03:00",
+                        "coverUri": "avatars.yandex.net/get-music-content/28589/2f3e2050.a.3888859-1/%%",
+                        "ogImage": "avatars.yandex.net/get-music-content/28589/2f3e2050.a.3888859-1/%%",
+                        "genre": "modern",
+                        "buy": [],
+                        "trackCount": 14,
+                        "recent": false,
+                        "veryImportant": false,
+                        "artists": [
+                            {
+                                "id": 1805508,
+                                "name": "BrunuhVille",
+                                "various": false,
+                                "composer": false,
+                                "cover": {
+                                    "type": "from-album-cover",
+                                    "prefix": "2f3e2050.a.3888859-1",
+                                    "uri": "avatars.yandex.net/get-music-content/28589/2f3e2050.a.3888859-1/%%"
+                                },
+                                "genres": []
+                            }
+                        ],
+                        "labels": [
+                            {
+                                "id": 149386,
+                                "name": "BrunuhVille"
+                            }
+                        ],
+                        "available": true,
+                        "availableForPremiumUsers": true,
+                        "availableForMobile": true,
+                        "availablePartially": false,
+                        "bests": [
+                            31981261,
+                            31981257,
+                            31981256
+                        ],
+                        "trackPosition": {
+                            "volume": 1,
+                            "index": 12
+                        }
+                    }
+                ],
+                "coverUri": "avatars.yandex.net/get-music-content/28589/2f3e2050.a.3888859-1/%%",
+                "ogImage": "avatars.yandex.net/get-music-content/28589/2f3e2050.a.3888859-1/%%",
+                "lyricsAvailable": false
+            },
+            "timestamp": "2018-08-09T09:29:50+00:00",
+            "recent": false
+        }
+    ],
+    "tags": [],
+    "likesCount": 0,
+    "prerolls": [],
+    "lastOwnerPlaylists": [
+        {
+            "owner": {
+                "uid": 47993101,
+                "login": "ragzovskii",
+                "name": "ragzovskii",
+                "sex": "male",
+                "verified": false
+            },
+            "uid": 47993101,
+            "kind": 1007,
+            "title": "muse",
+            "revision": 2,
+            "snapshot": 1,
+            "trackCount": 11,
+            "visibility": "public",
+            "collective": false,
+            "created": "2015-06-12T18:44:57+00:00",
+            "modified": "2015-06-12T18:45:01+00:00",
+            "available": true,
+            "isBanner": false,
+            "isPremiere": false,
+            "durationMs": 2557600,
+            "cover": {
+                "type": "mosaic",
+                "itemsUri": [
+                    "avatars.yandex.net/get-music-content/49707/b2b3365e.a.2787407-1/%%"
+                ],
+                "custom": false
+            },
+            "ogImage": "avatars.yandex.net/get-music-content/49707/b2b3365e.a.2787407-1/%%",
+            "tags": [],
+            "prerolls": []
+        },
+        {
+            "owner": {
+                "uid": 47993101,
+                "login": "ragzovskii",
+                "name": "ragzovskii",
+                "sex": "male",
+                "verified": false
+            },
+            "uid": 47993101,
+            "kind": 1003,
+            "title": "Ленинград",
+            "revision": 29,
+            "snapshot": 1,
+            "trackCount": 200,
+            "visibility": "public",
+            "collective": false,
+            "created": "2013-01-17T17:01:06+00:00",
+            "modified": "2015-04-24T04:55:05+00:00",
+            "available": true,
+            "isBanner": false,
+            "isPremiere": false,
+            "durationMs": 32192640,
+            "cover": {
+                "type": "mosaic",
+                "itemsUri": [
+                    "avatars.yandex.net/get-music-content/28589/d0b1a943.a.63910-1/%%",
+                    "avatars.yandex.net/get-music-content/32236/12d31315.a.63902-1/%%",
+                    "avatars.yandex.net/get-music-content/38044/89f2ef9a.a.113947-2/%%",
+                    "avatars.yandex.net/get-music-content/41288/49f7281e.a.63899-1/%%"
+                ],
+                "custom": false
+            },
+            "ogImage": "avatars.yandex.net/get-music-content/28589/d0b1a943.a.63910-1/%%",
+            "tags": [],
+            "prerolls": []
+        },
+        {
+            "owner": {
+                "uid": 47993101,
+                "login": "ragzovskii",
+                "name": "ragzovskii",
+                "sex": "male",
+                "verified": false
+            },
+            "uid": 47993101,
+            "kind": 1002,
+            "title": "soilwork",
+            "revision": 7,
+            "snapshot": 1,
+            "trackCount": 32,
+            "visibility": "public",
+            "collective": false,
+            "created": "2013-01-17T17:01:06+00:00",
+            "modified": "2011-12-13T06:06:19+00:00",
+            "available": true,
+            "isBanner": false,
+            "isPremiere": false,
+            "durationMs": 8084470,
+            "cover": {
+                "type": "mosaic",
+                "itemsUri": [
+                    "avatars.yandex.net/get-music-content/32236/89a6c80c.a.288038-1/%%",
+                    "avatars.yandex.net/get-music-content/38044/315d220f.a.133176-1/%%",
+                    "avatars.yandex.net/get-music-content/42108/76b48123.a.288026-1/%%"
+                ],
+                "custom": false
+            },
+            "ogImage": "avatars.yandex.net/get-music-content/32236/89a6c80c.a.288038-1/%%",
+            "tags": [],
+            "prerolls": []
+        },
+        {
+            "owner": {
+                "uid": 47993101,
+                "login": "ragzovskii",
+                "name": "ragzovskii",
+                "sex": "male",
+                "verified": false
+            },
+            "uid": 47993101,
+            "kind": 1001,
+            "title": "August Burns Red",
+            "revision": 7,
+            "snapshot": 1,
+            "trackCount": 21,
+            "visibility": "public",
+            "collective": false,
+            "created": "2013-01-17T17:01:06+00:00",
+            "modified": "2011-12-04T13:42:49+00:00",
+            "available": true,
+            "isBanner": false,
+            "isPremiere": false,
+            "durationMs": 4971350,
+            "cover": {
+                "type": "mosaic",
+                "itemsUri": [
+                    "avatars.yandex.net/get-music-content/34131/9f0817eb.a.33388-1/%%",
+                    "avatars.yandex.net/get-music-content/41288/bf5d2a9a.a.159904-1/%%",
+                    "avatars.yandex.net/get-music-content/42108/32464b12.a.149116-1/%%",
+                    "avatars.yandex.net/get-music-content/49707/91491b06.a.93931-1/%%"
+                ],
+                "custom": false
+            },
+            "ogImage": "avatars.yandex.net/get-music-content/34131/9f0817eb.a.33388-1/%%",
+            "tags": [],
+            "prerolls": []
+        }
+    ]
+}
