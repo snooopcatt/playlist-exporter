@@ -1,13 +1,17 @@
-var Wrapper = function(accessToken, deezer) {
+const RequestManager = require('./requests_manager');
+
+let Wrapper = function(accessToken, deezer) {
     this.accessToken = accessToken;
     this.deezer = deezer;
+
+    this.manager = new RequestManager(5000, 50);
 
     this.resolvePlaylistId = function resolvePlaylistId(name) {
         return name;
     };
 
     this.deletePlaylist = function deletePlaylist(id) {
-        return new Promise((resolve, reject) => {
+        return this.manager.schedule((resolve, reject) => {
             this.deezer.request(this.accessToken, {
                 resource: `playlist/${id}`,
                 method: 'get',
@@ -23,7 +27,7 @@ var Wrapper = function(accessToken, deezer) {
     };
 
     this.createPlaylist = function createPlaylist(name) {
-        return new Promise((resolve, reject) => {
+        return this.manager.schedule((resolve, reject) => {
             this.deezer.request(this.accessToken, {
                 resource: 'user/me/playlists',
                 fields: {
@@ -42,7 +46,7 @@ var Wrapper = function(accessToken, deezer) {
     };
 
     this.addToPlaylist = function addToPlaylist(tracks, id) {
-        return new Promise((resolve, reject) => {
+        return this.manager.schedule((resolve, reject) => {
             this.deezer.request(this.accessToken, {
                 resource: `playlist/${id}/tracks`,
                 method: 'post',
@@ -61,7 +65,7 @@ var Wrapper = function(accessToken, deezer) {
     };
 
     this.findTrack = function findTrack(title, artist) {
-        return new Promise((resolve, reject) => {
+        return this.manager.schedule((resolve, reject) => {
             this.deezer.request(this.accessToken, {
                 resource: 'search',
                 fields: {
@@ -76,6 +80,10 @@ var Wrapper = function(accessToken, deezer) {
                 }
             });
         });
+    };
+
+    this.destroy = function destroy() {
+        this.manager.destroy();
     };
 };
 

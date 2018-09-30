@@ -1,6 +1,7 @@
 let http = require('http'),
     DZ = require('node-deezer'),
     deezerApi = require('./deezer_wrapper'),
+    path = require('path'),
     fs = require('fs'),
     open = require('open');
 
@@ -14,7 +15,7 @@ function doImport(code) {
 
         if (result.accessToken) {
             const api = new deezerApi(result.accessToken, deezer);
-            const playlistsToImport = JSON.parse(fs.readFileSync('playlists.json', { encoding: 'UTF8' }));
+            const playlistsToImport = JSON.parse(fs.readFileSync(path.join('output', 'playlists.json'), { encoding: 'UTF8' }));
 
             let targetPL = playlistsToImport[2];
 
@@ -26,6 +27,9 @@ function doImport(code) {
                         return tracksToAdd.then(tracks => {
                             return api.addToPlaylist(tracks.map(track => track.data[0].id), result.id);
                         });
+                    })
+                    .then(() => {
+                        api.destroy();
                     });
             }
         }
